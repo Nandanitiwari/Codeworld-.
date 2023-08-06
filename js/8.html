@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interaction using alert, confirm and prompt</title>
+</head>
+<body>
+<div class="container">
+    this is a page
+</div>
+<script>
+    //alert is a function thrught which we can show the given msg throught pop-up window on screen
+    alert("your battery parcentage is only 15");
+    //alert does not return anything
+
+    //PROMPT :- to take input from user
+    let name = prompt("what is your name", "write your name here");
+    console.log(name);
+
+    //CONFIRM:- to give warning(double checck)
+    let deletePost = confirm("do you really want to delete the post?")
+    if(deletePost){
+        console.log("your post has been deleted successfully");
+    }
+    else{
+        console.log("your post has not been deleted");
+    }
+    console.log(deletePost);
+</script>
+</body>
+</html>

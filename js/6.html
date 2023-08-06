@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects</title>
+</head>
+
+<body>
+    <div class="container">simple si html</div>
+    <script>
+        let myvar = 34;
+        let myvar2 = "string";
+        let myvar3 = true;
+        let myvar4 = null;
+        let myvar5 = undefined;
+
+        let employee = {
+            name: "nani",
+            salary: 100,
+            channel: "Code_With_Harry",
+            channel2: "Programming_With_Harry",
+        }
+        console.log(employee)
+
+        // to take output in console of channel 2 if there is space btw channel and 2
+        // employee['channel 2']
+
+        //array
+        let names = [1, 2, 4, "harry", undefined];
+        console.log(names);
+        console.log(names[0]);
+        console.log(names[1]);
+        console.log(names[2]);
+        console.log(names[3]);
+        console.log(names[4]);
+        
+
+        let name = new Array(6, 7, 2, "carry", undefined);
+        console.log(name);
+        console.log(name.length);//to count no. of elements
+
+        name = name.sort();//to sort the elements
+        console.log(name);
+
+        name.push("to add new element");
+        console.log(name);
+
+        let nam = new Array(23, 45);
+        console.log(nam);
+
+        let nama = new Array(23);
+        console.log(nama);
+
+    </script>
+</body>
+
+</html>

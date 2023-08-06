@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript | String and String Methods</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+     </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Nulla numquam consequatur dolorum molestias, reiciendis
+     quas, iure facere deleniti nihil hic perferendis blanditiis 
+     inventore sunt voluptatum, excepturi consequuntur cupiditate aut
+      incidunt!</p>
+    </div>
+    <script>
+        var String = 'thi"s';
+        var String2 = "thi's";
+        console.log(String);
+        console.log(String2);
+
+        var name = "gunnu";
+        var message = " is a good girl";
+        console.log(name + message);
+
+        var channel = "codewithharry";
+        var temp = `${name} is a nice person. he has a channel called 
+        ${channel}`;
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`);
+        console.log("Hello \\n world \n this is gunnu");
+
+        // var y = new String("this");
+        // console.log(y);
+        //this will show an error
+        
+        document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>'
+
+    </script>
+</body>
+</html>

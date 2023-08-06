@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript settimeout and cleartimeout</title>
+</head>
+<body>
+    <div class="container">
+        time now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("settimeout and cleartimeout");
+        // settimeout --> Allow us to run the function once after the interval of time
+        // cleartimeout --> Allow us to run the function repeatedly after the interval of time
+//1.
+        function great(){
+            console.log("hello good afternoon ");
+        }
+        //1. greet();
+        
+        // setTimeout(great, 2000);
+ //2.         
+      // with additional name here we give argument like greet("harry");
+//         function greet(name , byetext){
+//             console.log("hello good morning "+ name + " " + byetext);
+//         }
+//         //1. greet();
+        
+//         setTimeout(greet, 5000, "harry", "take care");
+//         // setTimeout(greet(), 12000); --> wrong as it is calling the function inside setTimeout
+  //3.      
+//         function hello(name , byetext){
+//             console.log("hello good morning "+ name + " " + byetext);
+//         }
+//         timeout = setTimeout(hello, 5000, "harry", "take care");
+//         console.log(timeout)
+
+        // clearTimeout(timeout);  due to this the call of timeout will not show line-> 34
+ //setinterval    
+        // // setInterval(great, 1000 );
+        // intervalid = setInterval(great, 1000 );
+        // clearInterval(intervalid);
+        function displaytime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displaytime, 1000);
+    </script>
+</body>
+</html>

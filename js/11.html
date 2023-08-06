@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js events</title>
+    <style>
+        #btn {
+            background-color: blue;
+            color: white;
+            padding: 10px 10px;
+            border-radius: 10px;
+            border: 3px solid black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            padding: 11px 11px;
+            background-color: red;
+            box-shadow: 2px gray;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conatiner">
+        <h1>this is a heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            assumenda eaque modi velit, dicta amet maiores doloribus fuga
+            facilis beatae illo reprehenderit explicabo molestiae blanditiis
+            mollitia, ratione recusandae labore possimus magnam eius cupiditate
+            numquam perspiciatis autem? Eos, ratione in totam corrupti dolorum,
+            quo commodi aspernatur perspiciatis sapiente maiores ut repudiandae?</p>
+        <button id="btn" onclick="togglehide()">SHOW / HIDE</button>
+        <script>
+            let para = document.getElementById('para');
+            para.addEventListener('mouseover', function run(){
+               alert("mouse inside para");
+               console.log("mouse inside para");
+            });
+            para.addEventListener('mouseout', function run(){
+               alert("mouse outside para");
+               console.log("mouse outside para");
+            });
+
+            function togglehide() {
+                // let btn = document.getElementById('btn');
+                // let para = document.getElementById('para'); 
+                // it will also work after commenting above 2 lines
+                //bcs here we id of para, so the para variable will point the element of para id
+                if (para.style.display != "none") {
+                    para.style.display = "none";
+                }
+                else {
+                    para.style.display = "block";
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

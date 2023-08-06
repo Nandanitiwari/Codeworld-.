@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript string function</title>
+</head>
+<body>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+        //indexof functon gives first occurance of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        //lastindexof functon gives last occurance of a substring
+         position = str.lastIndexOf('is');
+        console.log(position);
+
+        //substring from a string
+        var substr = str.slice(1,5);
+        console.log(substr);
+
+        var subst = str.substring(1,7);//start from index 1 and end to index 7
+        console.log(subst);
+
+        var substri = str.substr(1,8);//start from index 1 and take total 8 characters
+        console.log(substri);
+
+        var replaced = str.replace('string', 'nannu');
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newString = str.concat(' new string');
+        console.log(newString)
+
+        var strwithwhitespaces = " this contains     whitespaces   ";
+        console.log(strwithwhitespaces);
+        console.log(strwithwhitespaces.trim());
+
+        var char3 = str.charAt(2);
+        console.log(char3);
+
+        var char2 = str.charCodeAt(2);
+        console.log(char2);
+
+        console.log(str[3])
+    </script>
+</body>
+</html>

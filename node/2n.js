@@ -1,0 +1,15 @@
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  // res.end('Hello World this is nandani');
+  res.end(' <!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Registration form</title><link rel="stylesheet" href="css/1.css"></head> <body>  <h1>Registration Form</h1>  <form action="backend.php">  <label for="fname"> First name:</label>  <div>     <input type="text" name="myfname" id="fname" placeholder="enter your first name..." >  </div>  <label for="lname">Last name:</label> <div>  <input type="text" name="mylname" id="lname" placeholder="enter your last name..."> </div> <label for="father"> Father name:</label> <div>    <input type="text" name="myfather" id="father" placeholder="enter your father name..."></div><label for="mother">Mother Name:</label> <div>     <input type="text" name="mymother" id="mother" placeholder="enter your mother name..."> </div>  <label for="gender">Gender</label><div>   Male<input type="radio" name="mygender" id="gender"> Female<input type="radio" name="mygender" id="gender"> Other<input type="radio" name="mygender" id="gender"></div><br>  <label for="ph.no.">Mobile number:</label>  <div>      <input type="number" name="myph.no." id="ph.no." placeholder="enter your phone number..."> </div>    <label for="email">Email id</label> <div>     <input type="email" name="myemail" id="email" placeholder="enter your email address..."> </div> <label for="dob">Date of birth</label> <div>    <input type="date" name="mydob" id="dob"> </div><br>    <label for="elegibility">your qualification</label>    <div>       <input type="checkbox" name="myeligibility" id="eligibility" > Senior secondary [10th]<br> fill the certificate here <input type="file"><br>     <input type="checkbox" name="myeligibility" id="eligibility" >Heigher secondary [12th]<br>        fill the certificate here <input type="file"><br>       <input type="checkbox" name="myeligibility" id="eligibility" >IIT Junier enterence exam [mains/advance]<br>    fill the certificate here <input type="file">   </div><br> <label for="Paddress">Permanent Address</label>  <div>      <input type="text" name="mypaddr" id="Paddress" >  </div>  <label for="Taddress">Temperory Address</label> <div>     <input type="text" name="myTaddr" id="Taddress" >     </div>   <label for="submit"></label>    <input type="submit" value="submit now" id="submit" >   <label for="reset"></label>  <input type="reset" value="reset now" id="reset" > </form> </body> </html>');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});

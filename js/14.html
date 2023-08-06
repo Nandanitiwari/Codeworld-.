@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow function</title>
+</head>
+<body>
+    <div class="container">
+        this is a arrow function tutorial
+    </div>
+    <script>
+        // let = greet = () => {
+        //     console.log("good morning");
+        // }
+        // greet();
+
+        let = greet = () => console.log("good morning");
+        
+    //     function greet(){
+    //         console.log("good morning");
+    //     }
+    //     greet();
+
+    setInterval(() =>{
+        console.log(" we are inside settimeout");
+    },3000)
+
+    // let sum2 = (a,b)=>{  // use it like sum2(78, 9) and enter in console.
+    //     return a+b;
+    // };
+
+    let sum3 = (a, b)=> a +b;
+    let half = a => a/2;
+
+    // let obj1 = {
+    //     greeting: "good morning",
+    //     names: ["Harry","rohan", "skillf", "djkhiladi"],
+    //     speak(){
+    //       this.names.forEach((student)=>{
+    //        console.log(this.greeting + " kukdoo koo " + student);
+    //       });
+    //     }
+    // }
+    // obj1.speak();
+
+    // here it gives undefined
+    let obj2 = {
+        greet: "good morning",
+        nanes: ["Harry","rohan", "skillf", "djkhiladi"],
+        speaken(){
+          this.nanes.forEach(function s (student){
+           console.log(this.greet + " kukdoo koo " + student);
+          });
+        }
+    }
+    obj2.speaken();
+     </script>
+</body>
+</html>
