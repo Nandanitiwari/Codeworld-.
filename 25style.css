@@ -1,74 +1,83 @@
-body{
-    margin: 0;
-    text-align: center;
-}
-h3{  
-   color: rgb(218, 85, 85);
-    
-}
-.top-container{
-    background-color: #bbf8f5;
-    height: 500px;
-    position: relative;
-    padding-top: 100px;   
+body {
+  margin: 0;
+  text-align: center;
 }
 
-.pro{
+h3 {
+  color: rgb(218, 85, 85);
+
+}
+
+.top-container {
+  background-color: #bbf8f5;
+  height: 500px;
+  position: relative;
+  padding-top: 100px;
+}
+
+.pro {
   text-decoration: underline;
 }
 
-.top-cloud{
-position: absolute;
-right: 400px;
-top: 80px;
+.top-cloud {
+  position: absolute;
+  right: 400px;
+  top: 80px;
 }
 
-.bottom-cloud{
-position: absolute;
-left: 420px;
-bottom: 320px;
+.bottom-cloud {
+  position: absolute;
+  left: 420px;
+  bottom: 320px;
 }
-.mountain{
+
+.mountain {
   position: absolute;
   height: 400px;
   left: 400px;
   bottom: 0px
 }
-.cartoon-wave{
-  margin:0%
+
+.cartoon-wave {
+  margin: 0%
 }
 
-.middle-container{
-   
-}
-.profile{ 
+.middle-container {}
+
+.profile {
   padding: 15px;
   background-color: rgba(255, 255, 0, 0.785);
 }
-.skills{  
+
+.skills {
   padding: 5px;
   background-color: yellowgreen;
 }
-.emoji{
+
+.emoji {
   height: 35px;
   width: 35px;
 }
-.picture{
+
+.picture {
   margin-top: 5px;
-  height: 300px; 
+  height: 300px;
   width: 300px;
 }
-#picture1{
+
+#picture1 {
   border-radius: 20px;
 }
 
-.bottom-container{
-   background-color: cornflowerblue;
+.bottom-container {
+  background-color: cornflowerblue;
 }
-.contact-me{
+
+.contact-me {
   padding-top: 15px;
   padding-bottom: 10px;
 }
-.footer-link{
+
+.footer-link {
   margin-left: 15px;
 }
