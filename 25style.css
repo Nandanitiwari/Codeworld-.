@@ -4,7 +4,7 @@ body {
 }
 
 h3 {
-  color: rgb(218, 85, 85);
+  color: rgb(234, 240, 241);
 
 }
 
@@ -46,12 +46,11 @@ h3 {
 
 .profile {
   padding: 15px;
-  background-color: rgba(255, 255, 0, 0.785);
+  background: linear-gradient(to right top, #a1a1a1, #84b4d7, #00d1e3, #00e7a2, #00e70c, #a8eb12);
 }
-
 .skills {
   padding: 5px;
-  background-color: yellowgreen;
+  background: linear-gradient(to right top, #c1423c,  #d784bd,#b289c5 ,#c270ae,#b937c0,  #a70373);
 }
 
 .emoji {
