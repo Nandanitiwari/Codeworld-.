@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+h1{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+/* if p is contained by li which is contained by div */
+div li p{
+    background-color: green;
+    color: blue;
+    font-weight: bold;
+}
+ 
+ /* p should be direct child of div or right inside div*/ 
+
+div > p{
+
+
+} 
+/* if div is right after div  */
+div + p{
+    color: white;
+    background-color: red;
+}
+    </style>
+
+
+</head>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another paragraph inside li</p></li>
+                <!-- <li class="item"><p></p></li>
+                <li class="item"><p></p></li>
+                <li class="item"><p></p></li> -->
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph direct after closing div</p>
+    </div>
+    <p>this is outermost paragraph direct after closing div</p>
+    </div>
+</body>
+</html>
