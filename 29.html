@@ -11,7 +11,19 @@
             padding: 0;
             background-color: black;
             color: white;
-            background: url(https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80) no-repeat center center/cover;
+
+        }
+
+        header::before {
+            background: url('https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
         }
 
         .navigation {
@@ -28,15 +40,16 @@
             height: 344px;
             /* border: 2px solid red; */
             margin: 3px 23px;
+            padding: 2px 46px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
 
-        section::after {
+        /* section::after {
             content: "This is a content";
-        }
+        } */
 
         h1 {
             font-size: 4rem;
@@ -70,7 +83,7 @@
             saepe ipsam tempora voluptates culpa autem aspernatur, voluptatum tempore quae minus quidem eum mollitia
             error libero harum corrupti ad in numquam!</p>
     </section>
-<hr>
+    <hr>
 </body>
 
 </html>
