@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box nd Text-shadow in css</title>
+    <title>Box and Text-shadow in css</title>
     <style>
         .container {
             display: flex;
@@ -21,7 +21,7 @@
         }
 
         .card h2 {
-             /* text-shadow: (x-axis ofset), (y-axis ofset),blur-radius, spread-radius, color ; */
+            /* text-shadow: (x-axis ofset), (y-axis ofset),blur-radius, spread-radius, color ; */
             text-shadow: 3px 4px 2px rgb(236, 117, 6);
         }
 
@@ -35,10 +35,14 @@
             /* box-shadow: inset 9px 9px 15px 3px rgb(224 33 33) ,inset 9px 9px 15px 3px rgb(234 50 24 / 82%); */
             box-shadow: inset 11px 11px 13px 6px rgb(236, 117, 6);
         }
+        h1{
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
+    <h1>Here we use two properties text-shadow and box-shadow</h1>
     <div class="container">
         <div class="card" id="card-1">
             <h2>card-1</h2>
