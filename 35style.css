@@ -94,7 +94,7 @@
 
 /* Services section */
 .services-container {
-    background-color:#f0f4c3;
+    background-color: #f0f4c3;
 }
 
 #services {
@@ -225,7 +225,8 @@ footer {
     border-radius: 10px;
     cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: chocolate;
     margin: 18px;
     padding: 7px 21px;
