@@ -9,5 +9,6 @@
 const fs =require("fs");
 let text = fs.readFile("dele.txt", "utf-8", (error, data)=>{
     console.log(error, data);
+    console.log(data);
 });
 console.log("this is a message");
