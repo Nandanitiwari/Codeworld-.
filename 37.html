@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating rows and gaps in grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-gap: 1rem;
+            /* ONLY FOR ROWS */
+            /* for first three row */
+            grid-template-rows: 1fr 1fr 4fr;
+
+            /* for rest rows after first three */
+            grid-auto-rows: 2fr;
+
+            /* for all rows */
+            /* grid-auto-rows: 1fr 1fr 4fr; */
+
+            /* ONLY FOR COLUMN */
+            /* grid-template-columns: 2fr 4fr 6fr; */
+            grid-template-columns: repeat(3, 2fr);
+        }
+
+        .box {
+            background-color: yellow;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box">this is box-1</div>
+        <div class="box">this is box-2</div>
+        <div class="box">this is box-3</div>
+        <div class="box">this is box-4</div>
+        <div class="box">this is box-5</div>
+        <div class="box">this is box-6</div>
+        <div class="box">this is box-7</div>
+        <div class="box">this is box-8</div>
+        <div class="box">this is box-9</div>
+        <div class="box">this is box-10</div>
+    </div>
+</body>
+
+</html>
