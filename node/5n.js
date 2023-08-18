@@ -4,5 +4,5 @@ text = text.replace("browserr" , "rohan");
 console.log("the content of the file is ");
 console.log(text);
 
-console.log("Creating a new file");
+console.log("Creating a new file...");
 fs.writeFileSync("rohan.txt", text);
