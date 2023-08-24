@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+.navbar{
+    background-color: rgb(168 160 160);
+    border-radius: 20px;
+    
+}
+.navbar ul{
+    overflow: auto;
+   
+}
+.navbar li{
+    float: left;/*bcs of float left property background color doesnot show so we tarket( navbar ul)*/
+    list-style: none;
+    margin: 21px 20px;  
+}
+.navbar li a{
+    font-size: 20px;
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: blue;
+}
+nav ul li.active a{
+    color: orange;
+}
+.search{
+    /* width: 500px;
+    height: 50px; */
+    float: right;
+    margin: 15px 25px;
+    padding: 2px 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.navbar input{
+    /* border: 2px solid black; */
+    padding: 5px 12px;
+   /* border-radius: 12px; */
+   border-style:none ;
+   font-size: 15px;
+}
+.container{
+    justify-content: center;
+    text-align: center;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="active"><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                    <input type="text" name="search" id="search" placeholder="Type to search here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>this is about</h1>
+    </div>
+</body>
+
+</html>
