@@ -1,3 +1,4 @@
+//synchronous
 const fs = require("fs");
 let text = fs.readFileSync("Dele.txt", "utf-8");
 text = text.replace("browserr" , "rohan");
