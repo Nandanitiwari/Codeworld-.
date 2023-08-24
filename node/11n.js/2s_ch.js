@@ -28,5 +28,7 @@ const fs = require('fs');
 //  console.log(data);
 
 // 5. rename the file name to mybio.txt 
-fs.renameSync("thapa/bio.txt" , "thapa/mybio.txt");
+// fs.renameSync("thapa/bio.txt" , "thapa/mybio.txt");
 
+// 6. now delete both the file and folder 
+fs.unlinkSync("thapa/mybio.txt");
