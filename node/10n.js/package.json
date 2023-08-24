@@ -1,0 +1,21 @@
+{
+  "name": "10n.js",
+  "version": "1.0.0",
+  "description": "this is best package ever",
+  "main": "10n1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awseom"
+  ],
+  "author": "nandani",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
