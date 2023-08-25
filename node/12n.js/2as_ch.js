@@ -26,7 +26,12 @@ const fs = require ("fs");
 // })
 
 // 4. read the data without getting the buffer data at first 
-fs.readFile("bio.txt", "utf-8", (error ,data) =>{
-    console.log(data);
-    console.log(error);
+// fs.readFile("bio.txt", "utf-8", (error ,data) =>{
+//     console.log(data);
+//     console.log(error);
+// })
+
+// 5. rename the file name to mybio.txt 
+fs.rename("bio.txt", "mybio.txt",(data, error) => {
+    console.log("rename completed");
 })
