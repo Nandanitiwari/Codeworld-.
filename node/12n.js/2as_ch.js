@@ -15,13 +15,13 @@ const fs = require ("fs");
 // })
 
 // 2. create a file in it named read.txt add data into it
-fs.writeFile("thapa/bio.txt", "creating file", (error) =>{
-    console.log("data added");
-    console.log(error);
-})
+// fs.writeFile("thapa/bio.txt", "creating file", (error) =>{
+//     console.log("data added");
+//     console.log(error);
+// })
 
 // 3. add more data into file without overriding the existing data 
-// fs.appendFile("bio.txt", "  |  appending data", (error) => {
+// fs.appendFile("thapa/bio.txt", "  |  appending data", (error) => {
 //     console.log("data appended");
 //     console.log(error);
 // })
