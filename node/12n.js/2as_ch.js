@@ -39,7 +39,11 @@ const fs = require ("fs");
 
 
 // 6. now delete  the file 
-fs.unlink("thapa/mybio.txt", (error,data) => {
-    console.log("file  deleted");
-})
+// fs.unlink("thapa/mybio.txt", (error,data) => {
+//     console.log("file  deleted");
+// })
 
+// 6. now delete both the file and folder 
+fs.rmdir("thapa", (error,data) => {
+    console.log("folder/directory  deleted");
+})
