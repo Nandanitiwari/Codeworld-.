@@ -27,15 +27,15 @@ const fs = require ("fs");
 // })
 
 // 4. read the data without getting the buffer data at first 
-fs.readFile("thapa/bio.txt", "utf-8", (error ,data) =>{
-    console.log(data);
-    console.log(error);
-})
+// fs.readFile("thapa/bio.txt", "utf-8", (error ,data) =>{
+//     console.log(data);
+//     console.log(error);
+// })
 
 // 5. rename the file name to mybio.txt 
-// fs.rename("bio.txt", "mybio.txt",(data, error) => {
-//     console.log("rename completed");
-// })
+fs.rename("thapa/bio.txt", "thapa/mybio.txt",(data, error) => {
+    console.log("rename completed");
+})
 
 // 6. now delete both the file and folder 
 // fs.rmdir("thapa", (error,data) => {
