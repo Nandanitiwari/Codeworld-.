@@ -33,11 +33,13 @@ const fs = require ("fs");
 // })
 
 // 5. rename the file name to mybio.txt 
-fs.rename("thapa/bio.txt", "thapa/mybio.txt",(data, error) => {
-    console.log("rename completed");
+// fs.rename("thapa/bio.txt", "thapa/mybio.txt",(data, error) => {
+//     console.log("rename completed");
+// })
+
+
+// 6. now delete  the file 
+fs.unlink("thapa/mybio.txt", (error,data) => {
+    console.log("file  deleted");
 })
 
-// 6. now delete both the file and folder 
-// fs.rmdir("thapa", (error,data) => {
-//     console.log("folder/directory  deleted");
-// })
