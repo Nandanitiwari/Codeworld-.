@@ -8,6 +8,7 @@
 // 6. now delete both the file and folder 
 
 // 1. create a folder name thapa
+const { error } = require("console");
 const fs = require ("fs");
 // fs.mkdir("thapa", (err) => {
 //     console.log("folder created");
@@ -32,6 +33,11 @@ const fs = require ("fs");
 // })
 
 // 5. rename the file name to mybio.txt 
-fs.rename("bio.txt", "mybio.txt",(data, error) => {
-    console.log("rename completed");
+// fs.rename("bio.txt", "mybio.txt",(data, error) => {
+//     console.log("rename completed");
+// })
+
+// 6. now delete both the file and folder 
+fs.rmdir("thapa", (error,data) => {
+    console.log("folder/directory  deleted");
 })
