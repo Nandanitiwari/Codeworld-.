@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variables / Custome Properties</title>
+    <style>
+        :root{
+            --primary-color: blue;/*the variable declared in root will be accesible all around the code*/
+            --secondary-color: red;
+            --maxw: 333px;
+        }
+        .container {
+            /* --box-color: blue; */
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: var(--box-color); */
+          
+        }
+
+        .box {
+            /* --box-color: blue; */
+            /*the scope of the variable will be within the block*/
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: 2px solid var(--secondary-color);
+            box-shadow: 3px 3px var(--primary-color);
+            margin: 2px 9px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

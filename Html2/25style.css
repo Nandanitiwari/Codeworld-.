@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+h3 {
+  color: rgb(234, 240, 241);
+
+}
+
+.top-container {
+  background-color: #bbf8f5;
+  height: 500px;
+  position: relative;
+  padding-top: 100px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 400px;
+  top: 80px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 420px;
+  bottom: 320px;
+}
+
+.mountain {
+  position: absolute;
+  height: 400px;
+  left: 400px;
+  bottom: 0px
+}
+
+.cartoon-wave {
+  margin: 0%
+}
+
+.middle-container {}
+
+.profile {
+  padding: 15px;
+  background: linear-gradient(to right top, #a1a1a1, #84b4d7, #00d1e3, #00e7a2, #00e70c, #a8eb12);
+}
+.skills {
+  padding: 5px;
+  background: linear-gradient(to right top, #c1423c,  #d784bd,#b289c5 ,#c270ae,#b937c0,  #a70373);
+}
+
+.emoji {
+  height: 35px;
+  width: 35px;
+}
+
+.picture {
+  margin-top: 5px;
+  height: 300px;
+  width: 300px;
+}
+
+#picture1 {
+  border-radius: 20px;
+}
+
+.bottom-container {
+  background-color: cornflowerblue;
+}
+
+.contact-me {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.footer-link {
+  margin-left: 15px;
+}

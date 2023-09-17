@@ -1,0 +1,132 @@
+/* responsiveness for food delivery website */
+/* navigation */
+
+@media only screen and (min-width:00px) and (max-width:600px) {
+    ul {
+        flex-wrap: wrap;
+    }
+
+    li {
+        /* display: block;
+        background-color:blue;
+        border: 2px dashed orangered; */
+        /* flex-direction: column; */
+        padding: 0px 17px 0px 14px;
+    }
+
+    .h-primary {
+        padding-top: 25px;
+    }
+
+    .unvisible {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:601px) {
+    ul {
+        flex-wrap: wrap;
+    }
+
+    li {
+        /* display: block;
+        background-color:blue;
+        border: 2px dashed orangered; */
+        /* flex-direction: column; */
+        padding: 0px 6px;
+    }
+}
+
+@media only screen and (max-width:420px) and (max-height:920px) {
+    ul {
+        flex-wrap: wrap;
+    }
+
+    li {
+        padding: 0px 5px 0px 4px;
+    }
+
+    .h-primary {
+        padding-top: 25px;
+    }
+
+    .unvisible {
+        display: none;
+    }
+}
+
+nav ul li a {
+    font-size: 1.5rem;
+    padding: 0px 7px;
+}
+
+/* Home section */
+#home {
+    height: 370px;
+    padding: 30px 68px;
+}
+
+#home::before {
+    height: 480px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+/* Services section */
+#services {
+    flex-direction: column;
+}
+
+#services .box {}
+
+/* Clients Section */
+#client {
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width:00px) and (max-width:960px) {
+    #client {
+        height: 90%
+    }
+}
+
+.client-item {
+    padding: 19px 25px 19px 25px;
+}
+
+@media only screen and (min-width:00px) and (max-width:472px) {
+    .client-item {
+        /* display: block;
+        background-color:blue;
+        border: 2px dashed orangered;*/
+        padding: 19px 10px 19px 10px;
+    }
+}
+
+@media only screen and (min-width:473px) and (max-width:598px) {
+    .client-item {
+        /* display: block;
+        background-color:blue;
+        border: 2px dashed orangered; */
+        padding: 19px 20px 19px 20px;
+    }
+}
+
+#client img {
+    height: 110px;
+}
+
+/* Contact Us Section */
+/* Footer Section */
+/* utility Classes */
+.h-primary {
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+#contact-box form {
+    width: 60%;
+}

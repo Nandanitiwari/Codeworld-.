@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>em rem vh vw + responsive design explained</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            font-size: 10px;
+        }
+        h1{
+            text-align: center;
+         
+        }
+        #item-1{
+             /* font-size: container*#item-1 = 10px* 3em =30px*/
+            font-size: 3em;
+            /* padding: (.container font-size * #item-1 font-size)*#item-1 padding */
+            /* padding :( 10px * 3em ) * 3em = 30px * 3em = 90px */
+            padding: 3em;
+        }
+        #item-2{
+             /* (font-size: html font-size *#item-2 = 25px* 3rem = 75px)  */
+            font-size: 3rem;
+            /*( padding:  html font-size * #item-2 padding = 25px * 3rem = 75px ) */
+            padding: 3rem;
+        }
+
+        .box{
+            width: 400px;
+            /* height: 344px; */
+            height: 100vh; /*height equals to page(view-port) height*/
+            /* width: 450px; */
+             width: 100vw; /* width equals to page(view-port) width */
+            border: 2px solid red;
+            font-size: 10px ;
+        }
+        #item-3{
+
+        }
+        #item-4{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="item-1">this is first heading</h1>
+        <h1 id="item-2">this is second heading</h1>
+    </div>
+    <div class="box">
+        <h1 id="item-3">this is third heading</h1>
+        <h1 id="item-3">this is third heading</h1>
+    </div>
+</body>
+</html>

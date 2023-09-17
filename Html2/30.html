@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text-shadow in css</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            margin: 15px;
+            border: 2px solid red;
+            background-color: yellow;
+            /* box-shadow: (x-axis ofset), (y-axis ofset),blur-radius,spread-radius, color ; */
+            box-shadow: 10px 19px 11px 3px rgb(51, 50, 50);
+            /* box-shadow: -10px -13px green; */
+        }
+
+        .card h2 {
+            /* text-shadow: (x-axis ofset), (y-axis ofset),blur-radius, spread-radius, color ; */
+            text-shadow: 3px 4px 2px rgb(236, 117, 6);
+        }
+
+        .Card {
+            /* display: block; */
+            padding: 23px 12px;
+            margin: 15px;
+            border: 2px solid red;
+            background-color: yellow;
+            /* box-shadow: inset, (x-axis ofset), (y-axis ofset),blur-radius,spread-radius, color ; */
+            /* box-shadow: inset 9px 9px 15px 3px rgb(224 33 33) ,inset 9px 9px 15px 3px rgb(234 50 24 / 82%); */
+            box-shadow: inset 11px 11px 13px 6px rgb(236, 117, 6);
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Here we use two properties text-shadow and box-shadow</h1>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card-1</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore qui dignissimos culpa optio modi
+                quae recusandae suscipit alias quas? Aperiam et sint est maxime ad vero, corporis quos modi voluptas
+                alias facere deserunt?</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>card-2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore qui dignissimos culpa optio modi
+                quae recusandae suscipit alias quas? Aperiam et sint est maxime ad vero, corporis quos modi voluptas
+                alias facere deserunt?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card-3</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore qui dignissimos culpa optio modi
+                quae recusandae suscipit alias quas? Aperiam et sint est maxime ad vero, corporis quos modi voluptas
+                alias facere deserunt?</p>
+        </div>
+    </div>
+    <div class="Card" id="card-4">
+        <h2>Card-4</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore qui dignissimos culpa optio modi
+            quae recusandae suscipit alias quas? Aperiam et sint est maxime ad vero, corporis quos modi voluptas
+            alias facere deserunt?</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+body{
+    background-color: lightskyblue;
+}
+hr{
+border-style: none;
+border-top-style:dotted ;
+border-color:rgb(4, 73, 103) ;
+border-width: 5px;
+width: 90px;
+}
+h1{
+ color: blue;
+}
+h2{
+ color :#f5dd07;
+}

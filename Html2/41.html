@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid + media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .border {
+            border: 2px solid red;
+            padding: 23px;
+            background-color: wheat;
+        }
+
+        @media only screen and (max-width:400px) {
+            body {
+                background-color: aqua;
+            }
+
+            .container {
+                text-align: center;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span{
+                display: block;
+                padding: 5px 0px;
+            }
+        }
+
+        @media only screen and (min-width:400px) and (max-width:700px) {
+            body {
+                background-color: blueviolet;
+            }
+
+            .container {
+                text-align: center;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+            span{
+                display: block;
+                padding: 5px 0px;
+            }
+
+        }
+
+        @media only screen and (min-width:700px) and (max-width:1000px) {
+            body {
+                background-color: blue;
+            }
+            span{
+               padding: 0px 15px;
+            }
+        }
+
+        @media only screen and (min-width:1000px) {
+            body {
+                background-color: green;
+            }
+            span{
+               padding: 0px 15px;
+            }
+        }
+
+        nav {
+            grid-area: navbar;
+
+        }
+
+        section {
+            grid-area: section;
+
+        }
+
+        aside {
+            grid-area: aside;
+
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="border">
+            <span>Home</span>
+            <span>about</span>
+            <span>Services</span>
+            <span> Contactus</span>
+           
+        </nav>
+
+        <section class="border">
+            <h2>Learn css in hindi</h2>
+        </section>
+
+        <aside class="border">
+            <h1>More about us</h1>
+        </aside>
+
+        <footer class="border">
+            copyright CodewithHarry
+        </footer>
+    </div>
+</body>
+
+</html>
